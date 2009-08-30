@@ -210,12 +210,12 @@ class Application
 
   def set_notes
     if @notes
-      @menu.removeItemAtIndex(0)
+      @menu.removeItemAtIndex(1)
       @notes = nil
     else
       @notes = menu_item  do |item|
         item.view = notes
-        @menu.insertItem item, atIndex:0
+        @menu.insertItem item, atIndex:1
       end
     end
   end
