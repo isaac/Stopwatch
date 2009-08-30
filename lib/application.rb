@@ -12,6 +12,7 @@ class Application
   def start
     @app = application :name => "Stopwatch", :delegate => self
     @status = status_item
+    set_status_menu
     load
     @app.run
   end
@@ -42,7 +43,7 @@ class Application
       p.contentView.addSubview @form
       p.contentView.addSubview @button
     end
-    @form.cells.each { |cell| cell.setStringValue user_defaults["WFM #{cell.title}"] }
+    @form.cells.each { |cell| cell.setStringValue user_defaults["WFM #{cell.title}"].to_s }
     @panel.orderFrontRegardless
   end
 
