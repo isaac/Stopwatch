@@ -12,7 +12,6 @@ class Application
   def start
     @app = application :name => "Stopwatch", :delegate => self
     @status = status_item
-    set_status_menu
     load
     @app.run
   end
@@ -64,14 +63,14 @@ class Application
   end
 
   def load
-    return preferences unless preferences?
-    @action = nil
     @clients ||= plist(:clients) || []
+    @action = nil
+    set_status_menu
+    return preferences unless preferences?
     if @clients.empty?
       @status.view = spinner
       refresh
     else
-      set_status_menu
       post_timesheets
     end
   end
@@ -87,12 +86,6 @@ class Application
 
   def status_menu
     menu :delegate => self do |status|
-      status.submenu "Options" do |options|
-        options.item "Synchronize", :on_action => proc { reload }
-        options.item "Preferences", :on_action => proc { preferences }
-        options.item "Quit", :on_action => proc { @app.terminate self }
-      end
-      status.separator unless @clients.empty?
       @clients.each do |client|
         client_item = menu_item :title => client["Name"]
         client_item.setRepresentedObject client
@@ -116,6 +109,11 @@ class Application
         status.setSubmenu job_menu, forItem:client_item
         status.addItem client_item
       end
+      status.separator unless @clients.empty?
+      status.item "Synchronize", :on_action => proc { reload }
+      status.item "Preferences", :on_action => proc { preferences }
+      status.separator
+      status.item "Quit", :on_action => proc { @app.terminate self }
     end
   end
 
@@ -197,7 +195,10 @@ class Application
   end
 
   def set_action(options = @options)
-    @action ||= menu_item { |item| @menu.insertItem item, atIndex:0 }
+    @action ||= menu_item do |item|
+      @menu.insertItem NSMenuItem.separatorItem, atIndex:0
+      @menu.insertItem item, atIndex:0
+    end
     if options[:active]
       @action.on_action = proc { off }
       @action.title = "Stop"
@@ -209,12 +210,12 @@ class Application
 
   def set_notes
     if @notes
-      @menu.removeItemAtIndex(1)
+      @menu.removeItemAtIndex(0)
       @notes = nil
     else
       @notes = menu_item  do |item|
         item.view = notes
-        @menu.insertItem item, atIndex:1
+        @menu.insertItem item, atIndex:0
       end
     end
   end
