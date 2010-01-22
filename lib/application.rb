@@ -124,11 +124,11 @@ class Application
   end
 
   def hotkeyWasPressed  
-    NSLog "You pressed Control+Option+Space"
+    log "You pressed Control+Option+Space"
     @app.tryToPerform nil, with:@status
     item = @menu.itemAtIndex 0
     @menu.performActionForItemAtIndex 0
-    NSLog item.target.description
+    log item.target.description
   end
 
   def notes
@@ -319,6 +319,7 @@ class Application
   end
 
   def refresh
+    log "refresh"
     get url(:jobs, staff_id) do |response|
       @jobs = xml_document(:data => response.body).to_dictionary("Job").map do |job|
         job.merge "Tasks" => [ job["Tasks"]["Task"] ].flatten.compact.sort_by { |task| task["Name"] }
