@@ -1,5 +1,4 @@
-require 'shortcut'
-require 'hotcocoa'
+require File.join(File.dirname(__FILE__), '..', 'hotcocoa-0.5', 'lib', 'hotcocoa')
 
 Dir.glob(File.join(File.dirname(__FILE__), 'vendor', '*.rb')).each do |file|
   require file
