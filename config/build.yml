@@ -5,5 +5,5 @@ resources:
   - resources/**/*.*
 sources: 
   - lib/**/*.rb
-  - hotcocoa-0.5/lib/**/*.rb
+  - hotcocoa*/lib/**/*.rb
 agent: true
