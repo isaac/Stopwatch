@@ -34,6 +34,12 @@ class Application
       f.setCellSize [ width - margin * 2, 23 ]
       f.setInterlineSpacing 15
     end
+    @form.instance_eval do
+      def performKeyEquivalent(event)
+        action = { :x => :cut, :c => :copy, :v => :paste, :a => :selectAll }[event.charactersIgnoringModifiers.to_sym]
+        self.window.firstResponder.send(action, self) if action
+      end
+    end
     @button ||= button :frame => [ width - 80, 10, 60, 25 ], :title => "Save", :bezel => :recessed do |b|
       b.on_action { save_preferences }
     end
