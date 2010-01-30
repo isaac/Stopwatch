@@ -21,7 +21,7 @@ class Application
   end
 
   def preferences
-    size = NSScreen.screens[0].visibleFrame.size
+    size = NSScreen.screens[0].visibleFrame.size  
     width, height, margin = 400, 164, 20
     frame = [ size.width - width, size.height - height + 5, width, height ]
     cells = @preferences.map do |field|
