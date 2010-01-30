@@ -185,8 +185,8 @@ class Application
     save
     @timer.invalidate
     set_title
-    set_action
     set_notes
+    set_action
   end
 
   def set_state(state)
@@ -211,12 +211,12 @@ class Application
 
   def set_notes
     if @notes
-      @menu.removeItemAtIndex(1)
+      @menu.removeItemAtIndex(0)
       @notes = nil
     else
       @notes = menu_item  do |item|
         item.view = notes
-        @menu.insertItem item, atIndex:1
+        @menu.insertItem item, atIndex:0
       end
     end
   end
