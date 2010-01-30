@@ -318,7 +318,6 @@ class Application
   end
 
   def refresh
-    log "refresh"
     get url(:jobs, staff_id) do |response|
       @jobs = xml_document(:data => response.body).to_dictionary("Job").map do |job|
         job.merge "Tasks" => [ job["Tasks"]["Task"] ].flatten.compact.sort_by { |task| task["Name"] }
