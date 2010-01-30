@@ -6,5 +6,4 @@ resources:
 sources: 
   - lib/**/*.rb
   - hotcocoa-0.5/lib/**/*.rb
-properties:
-  LSUIElement: "1"
+agent: true
