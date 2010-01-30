@@ -129,11 +129,11 @@ class Application
   end
 
   def hotkeyWasPressed  
-    log "You pressed Control+Option+Space"
+    puts "You pressed Control+Option+Space"
     @app.tryToPerform nil, with:@status
     item = @menu.itemAtIndex 0
     @menu.performActionForItemAtIndex 0
-    log item.target.description
+    puts item.target.description
   end
 
   def notes
@@ -143,10 +143,6 @@ class Application
     @text.cell.placeholderString = "Notes"
     @view << @text
     @view
-  end
-
-  def log(object)
-    STDERR << object.description
   end
 
   def applicationDidFinishLaunching(sender)
