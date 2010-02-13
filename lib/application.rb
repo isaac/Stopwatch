@@ -16,13 +16,13 @@ class Application
   end
 
   def preferences?
-    @preferences = [ 'Api Key', 'Account Key', 'Email Address' ]
-    @preferences.map { |p| user_defaults["WFM #{p}"] }.compact.size == 3
+    @preferences = [ 'Account Key', 'Email Address' ]
+    @preferences.map { |p| user_defaults["WFM #{p}"] }.compact.size == 2
   end
 
   def preferences
     size = NSScreen.screens[0].visibleFrame.size  
-    width, height, margin = 400, 164, 20
+    width, height, margin = 400, 126, 20
     frame = [ size.width - width, size.height - height + 5, width, height ]
     cells = @preferences.map do |field|
       p = NSMutableParagraphStyle.new
@@ -378,7 +378,7 @@ class Application
   
   def api_keys
     {
-      :apiKey => user_defaults['WFM Api Key'],
+      :apiKey => '97F603CFC65C4BE282A65B8DC809981F',
       :accountKey => user_defaults['WFM Account Key']
     }
   end
