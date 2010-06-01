@@ -95,11 +95,11 @@ class Application
         client_item = menu_item :title => client["Name"]
         client_item.setRepresentedObject client
         job_menu = menu do |jobs|
-          client["Jobs"].each do |job|
+          client[:jobs].each do |job|
             job_item = menu_item :title => job["Name"]
             job_item.setRepresentedObject job
             task_menu = menu do |tasks|
-              job["Tasks"].each do |task|
+              job[:tasks].each do |task|
                 task_item = tasks.item task["Name"]
                 task_item.setRepresentedObject task
                 task_item.on_action = proc {
@@ -137,7 +137,7 @@ class Application
   end
 
   def notes
-    width = @status.title.sizeWithAttributes({ NSFontAttributeName => font(:menu_bar => 0) }).width
+    width = @clients.map { |client| client[:size] }.max + 60
     @view = view :auto_resize => [ :width, :height ], :frame => [ 0, 0, width + 20, 40 ]
     @text = text_field :bezel_style => NSTextFieldRoundedBezel, :frame => [ 15, 5, width, 30 ]
     @text.cell.placeholderString = "Notes"
@@ -311,8 +311,9 @@ class Application
   end
 
   def clients
-    @clients = write_plist(:clients, @jobs.map { |job| job["Client"] }.uniq.map do |client|
-      client.merge "Jobs" => @jobs.select { |job| job["Client"]["ID"] == client["ID"] }
+    @clients = write_plist(:clients, @jobs.map { |job| job["Client"] }.uniq.compact.map do |client|
+      client[:size] = client["Name"].sizeWithAttributes({ NSFontAttributeName => NSFont.menuFontOfSize(0) }).width
+      client.merge :jobs => @jobs.select { |job| job["Client"]["ID"] == client["ID"] }
     end.sort_by { |client| client["Name"] })
     load
   end
@@ -320,7 +321,7 @@ class Application
   def refresh
     get url(:jobs, staff_id) do |response|
       @jobs = xml_document(:data => response.body).to_dictionary("Job").map do |job|
-        job.merge "Tasks" => [ job["Tasks"]["Task"] ].flatten.compact.sort_by { |task| task["Name"] }
+        job.merge :tasks => [ job["Tasks"]["Task"] ].flatten.compact.sort_by { |task| task["Name"] }
       end.compact.sort_by { |job| job["Name"] }
       clients
     end
