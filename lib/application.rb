@@ -226,7 +226,7 @@ class Application
   end
 
   def set_title
-    @status.title = @options[:active] ? hours(@options) : ''
+    @status.title = @options[:active] ? " #{hours(@options)}" : ''
   end
 
   def start_timer
