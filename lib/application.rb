@@ -226,9 +226,7 @@ class Application
   end
 
   def set_title
-    title = [ @options[:task].title.split(' - ').last, @options[:job].title ]
-    title << hours(@options) if @options[:active]
-    @status.title = " #{title.reverse.join(' - ')}"
+    @status.title = @options[:active] ? hours(@options) : ''
   end
 
   def start_timer
