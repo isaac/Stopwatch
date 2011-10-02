@@ -255,7 +255,7 @@ class Application
 
   def post_timesheets
     Dir.glob "#{lib_path}/*.xml" do |file|
-      MacRubyHTTP.post url(:time), { :payload => File.read(file) } do |response|
+      MacRubyHTTP.post url(:time), payload: File.read(file) do |response|
         File.delete file if response.status_code == 200 && File.exist?(file)
       end
     end
