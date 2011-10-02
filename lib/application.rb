@@ -324,8 +324,8 @@ class Application
   end
 
   def refresh
-    get url(:jobs, staff_id) do |response|
-      @jobs = xml_document(:data => response.body).to_dictionary("Job").map do |job|
+    get url(:jobs, staff_id) do |xml|
+      @jobs = xml.to_dictionary("Job").map do |job|
         job.merge :tasks => [ job["Tasks"]["Task"] ].flatten.compact.sort_by { |task| task["Name"] }
       end.compact.sort_by { |job| job["Name"] }
       clients
@@ -337,8 +337,8 @@ class Application
   end
 
   def set_staff_id
-    get url(:staff) do |response|
-      users = xml_document(:data => response.body).to_dictionary("Staff")
+    get url(:staff) do |xml|
+      users = xml.to_dictionary("Staff")
       staff = users.detect { |user| user["Email"] == user_defaults['WFM Email Address'] }
       user_defaults["WFM Staff ID"] = staff["ID"]
       refresh
@@ -346,13 +346,12 @@ class Application
   end
 
   def get(uri, &block)
-    MacRubyHTTP.get uri, immediate: true do |response|
-      if response.status_code == 200
-        block.call response
-      else
-        set_status_menu
-        preferences
-      end
+    response = RestClient.get uri
+    if response.code == 200
+      block.call xml_document string: response.body
+    else
+      set_status_menu
+      preferences
     end
   end
 
