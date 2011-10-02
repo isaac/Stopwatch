@@ -2,7 +2,7 @@ require 'rubygems'
 require 'hotcocoa'
 require 'rest_client'
 
-Dir.glob(File.join(File.dirname(__FILE__), 'vendor', '*.rb')).each do |file|
+Dir.glob(File.join(File.dirname(__FILE__), 'mappings', '*.rb')).each do |file|
   require file
 end
 
