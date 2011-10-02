@@ -256,9 +256,13 @@ class Application
 
   def post_timesheets
     Dir.glob "#{lib_path}/*.xml" do |file|
-      response = RestClient.post url(:time), File.read(file)
-      File.delete file if response.code == 200 && File.exist?(file)
+      performSelectorInBackground "post_timesheet:", withObject:file
     end
+  end
+
+  def post_timesheet(file)
+    response = RestClient.post url(:time), File.read(file)
+    File.delete file if response.code == 200 && File.exist?(file)
   end
 
   def timesheet(options)
