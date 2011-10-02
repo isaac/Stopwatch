@@ -6,14 +6,16 @@ HotCocoa::Mappings.map xml_document: NSXMLDocument do
   def alloc_with_options options
     mask = options.delete :options
     error = options.delete :error
-    if options[:url]
+    if options[:string]
+      NSXMLDocument.alloc.initWithXMLString options.delete(:string), options:mask, error:error
+    elsif options[:url]
       url = NSURL.alloc.initWithString options.delete(:url)
       NSXMLDocument.alloc.initWithContentsOfURL url, options:mask, error:error
     elsif options[:file] || options[:data]
       data = options.delete(:data) || NSData.alloc.initWithContentsOfFile(options.delete(:file))
       NSXMLDocument.alloc.initWithData data, options:mask, error:error
     else
-      raise "Must provide either :url, :file or :data when constructing an NSXMLDocument"
+      raise "Must provide either :string, :url, :file or :data when constructing an NSXMLDocument"
     end
   end
 
