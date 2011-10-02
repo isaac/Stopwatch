@@ -1,4 +1,5 @@
-require File.join(File.dirname(__FILE__), '..', 'hotcocoa-0.5.1', 'lib', 'hotcocoa')
+require 'rubygems'
+require 'hotcocoa'
 
 Dir.glob(File.join(File.dirname(__FILE__), 'vendor', '*.rb')).each do |file|
   require file
