@@ -342,7 +342,7 @@ class Application
   end
 
   def get(uri, &block)
-    MacRubyHTTP.get uri do |response|
+    MacRubyHTTP.get uri, immediate: true do |response|
       if response.status_code == 200
         block.call response
       else
