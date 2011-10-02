@@ -1,13 +1,26 @@
 require 'rubygems'
-require 'hotcocoa/application_builder'
-require 'hotcocoa/standard_rake_tasks'
+require 'hotcocoa/application/builder'
+
+builder = Application::Builder.new 'Stopwatch.appspec'
+
+desc 'Build the application'
+task :build do
+  builder.build
+end
+
+desc 'Build a deployable version of the application'
+task :deploy do
+  builder.build deploy: true
+end
+
+desc 'Build and execute the application'
+task :run => [:build] do
+  builder.run
+end
+
+desc 'Cleanup build files'
+task :clean do
+  builder.remove_bundle_root
+end
 
 task :default => [:run]
-
-task :unpack do
-  `macgem unpack hotcocoa` unless File.directory? "hotcocoa-0.5.1"
-end
-
-task :embed => [:clean, :unpack, :build] do
-  `macruby_deploy --no-stdlib --embed "#{AppConfig.name}.app"`
-end
