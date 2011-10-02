@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'hotcocoa'
+require 'rest_client'
 
 Dir.glob(File.join(File.dirname(__FILE__), 'vendor', '*.rb')).each do |file|
   require file
@@ -255,9 +256,8 @@ class Application
 
   def post_timesheets
     Dir.glob "#{lib_path}/*.xml" do |file|
-      MacRubyHTTP.post url(:time), payload: File.read(file) do |response|
-        File.delete file if response.status_code == 200 && File.exist?(file)
-      end
+      response = RestClient.post url(:time), File.read(file)
+      File.delete file if response.code == 200 && File.exist?(file)
     end
   end
 
