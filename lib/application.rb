@@ -300,7 +300,7 @@ class Application
   end
 
   def plist(name)
-    plist?(name) ? read_plist(File.read(plist_path(name))) : nil
+    plist?(name) ? load_plist(File.read(plist_path(name))) : nil
   end
 
   def plist_path(name)
