@@ -102,16 +102,29 @@ class Application
             job_item.setRepresentedObject job
             task_menu = menu do |tasks|
               job[:tasks].each do |task|
-                task_item = tasks.item task["Name"]
+                task_item = menu_item :title => task["Name"]
                 task_item.setRepresentedObject task
                 task_item.on_action = proc {
                   select({ :task => task_item, :job => job_item, :client => client_item })
                 }
+                tasks.addItem task_item
               end
+              tasks.separator
+              job_url = menu_item :title => "Open in WorkflowMax"
+              job_url.on_action = proc {
+                NSWorkspace.sharedWorkspace.openURL NSURL.URLWithString("https://my.workflowmax.com/job/jobview.aspx?id=#{ job['InternalID'] }")
+              }
+              tasks.addItem job_url
             end
             jobs.setSubmenu task_menu, forItem:job_item
             jobs.addItem job_item
           end
+          jobs.separator
+          client_url = menu_item :title => "Open in WorkflowMax"
+          client_url.on_action = proc {
+            NSWorkspace.sharedWorkspace.openURL NSURL.URLWithString("https://my.workflowmax.com/client/clientview.aspx?id=#{ client['ID'] }")
+          }
+          jobs.addItem client_url
         end
         status.setSubmenu job_menu, forItem:client_item
         status.addItem client_item
