@@ -132,6 +132,11 @@ class Application
       status.separator unless @clients.empty?
       status.item "Synchronize", :on_action => proc { reload }
       status.item "Preferences", :on_action => proc { preferences }
+      wfm_url = menu_item :title => "WorkflowMax"
+      wfm_url.on_action = proc {
+        NSWorkspace.sharedWorkspace.openURL NSURL.URLWithString("https://my.workflowmax.com/my/overview.aspx")
+      }
+      status.addItem wfm_url
       status.separator
       status.item "Quit", :on_action => proc { @app.terminate self }
     end
