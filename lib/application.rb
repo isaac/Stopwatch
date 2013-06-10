@@ -1,3 +1,4 @@
+framework 'CoreGraphics'
 require 'rubygems'
 require 'hotcocoa'
 require 'rest_client'
