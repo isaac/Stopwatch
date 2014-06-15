@@ -1,9 +1,0 @@
-name: Stopwatch
-load: lib/application.rb
-version: "1.0"
-resources:
-  - resources/**/*.*
-sources: 
-  - lib/**/*.rb
-  - hotcocoa*/lib/**/*.rb
-agent: true
