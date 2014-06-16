@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statuses type="array">
+    <status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671290</id>
+      <text>Feeling worn down, preparing to fight back.</text>
+      <source>&lt;a href="http://www.tweetdeck.com/"&gt;TweetDeck&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>10543</id>
+      <name>craig zheng</name>
+      <screen_name>czheng</screen_name>
+      <description>Chasing my one-line bio</description>
+      <location>New York</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url/>
+      <protected>false</protected>
+      <followers_count>53</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671289</id>
+      <text>I should have asked people if they disabled javascript in acrobat reader before pointing to a pdf magazine ;-) *doh*</text>
+      <source>&lt;a href="http://www.tweetdeck.com/"&gt;TweetDeck&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>14575120</id>
+      <name>Security4all</name>
+      <screen_name>security4all</screen_name>
+      <description>Security Geek, Japan &amp; Sushi lover</description>
+      <location>Belgium</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url>http://blog.security4all.be</url>
+      <protected>false</protected>
+      <followers_count>744</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671285</id>
+      <text>@Mir12 i got more information..if youre intrested.</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1242643023</in_reply_to_status_id>
+      <in_reply_to_user_id>18821146</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>21133487</id>
+      <name>kimberly</name>
+      <screen_name>laughingg86</screen_name>
+      <description/>
+      <location>somewhere far from nowhere</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url/>
+      <protected>false</protected>
+      <followers_count>4</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671284</id>
+      <text>@shavingkit  one for newborn, one for three year all. You KNOW youre the bomb,  been searching for days. NADA. Need SK magic, are you game?</text>
+      <source>&lt;a href="http://www.tweetdeck.com/"&gt;TweetDeck&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245484307</in_reply_to_status_id>
+      <in_reply_to_user_id>16652427</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>16659297</id>
+      <name>blossombabies</name>
+      <screen_name>blossombabies</screen_name>
+      <description>mother of three, manager of B&amp;amp;M and dollmaker extraordinaire! Oh, and hopelessly addicted to the internet (hey, but who isn't?....)</description>
+      <location>Germany</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/61559062/1_normal.jpg</profile_image_url>
+      <url>http://www.etsy.com/shop.php?user_id=5389691</url>
+      <protected>false</protected>
+      <followers_count>123</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:42:00 +0000 2009</created_at>
+      <id>1245671283</id>
+      <text>@LeoLaporte wow, it's the dawning of the age of Aquarius or something. (that would make a cool song)</text>
+      <source>&lt;a href="http://www.tweetdeck.com/"&gt;TweetDeck&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245634185</in_reply_to_status_id>
+      <in_reply_to_user_id>3829151</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>17365721</id>
+      <name>Greg Kalmbach</name>
+      <screen_name>gkalmbach</screen_name>
+      <description>Software Engineer, Photographer, TechGeek, Movie Buff, Music Nut</description>
+      <location>Dayton, OH</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/80033054/_MG_6243-Edit_normal.jpg</profile_image_url>
+      <url>http://gkphotog.blogspot.com/</url>
+      <protected>false</protected>
+      <followers_count>51</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671282</id>
+      <text>@caesa コピー防止のアクティベートが3回までとかＯＳ入れ直さないと消えないプロテクトプログラムとかが買うのを躊躇う理由</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245151454</in_reply_to_status_id>
+      <in_reply_to_user_id>10102172</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>11027662</id>
+      <name>syuvaell</name>
+      <screen_name>syuvaell</screen_name>
+      <description/>
+      <location/>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/57024026/あー_normal.jpg</profile_image_url>
+      <url/>
+      <protected>false</protected>
+      <followers_count>6</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671279</id>
+      <text>chai latte cupcakes? whaat? yes we have some. and they are super tasty. get your ass to bevalo and put a coffee in your mouth. #slc #bevalo</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>21155421</id>
+      <name>jon stovall</name>
+      <screen_name>bevalocoffeeSLC</screen_name>
+      <description>making sweet coffee love.</description>
+      <location>salt lake city, utah</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/79481841/bevalo_cap_one_normal.jpg</profile_image_url>
+      <url>http://www.bevalo.com</url>
+      <protected>false</protected>
+      <followers_count>20</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671277</id>
+      <text>@brettmickelson haha sorry about that. It had been a while since i'd heard that song. Next YouTube I post will bring serious :rawk for you!</text>
+      <source>&lt;a href="http://twitterfon.net/"&gt;TwitterFon&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245501210</in_reply_to_status_id>
+      <in_reply_to_user_id>19914767</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>19926250</id>
+      <name>Shaun Cepican</name>
+      <screen_name>shauncep</screen_name>
+      <description>Senior at U. of Illinois</description>
+      <location>Champaign</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url/>
+      <protected>false</protected>
+      <followers_count>38</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671276</id>
+      <text>@davidwayne_CSCC Connor was in broadcast back in the day.  Live across the hall from him fresh. year.  Now in Tcom-something now I think.</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245659602</in_reply_to_status_id>
+      <in_reply_to_user_id>15678049</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>17918017</id>
+      <name>Drew Schaar</name>
+      <screen_name>Crouts</screen_name>
+      <description>Junior Broadcast Journalism student at Ohio University, WOUB FM radio anchor/reporter.  Seeking internships/employment and networking.</description>
+      <location>Athens, Ohio</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url>http://dpschaar.wordpress.com/</url>
+      <protected>false</protected>
+      <followers_count>102</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671274</id>
+      <text>@nicoleehorton awws welcome lov-A</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id>17587304</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>18664934</id>
+      <name>laura veit</name>
+      <screen_name>lauraveit</screen_name>
+      <description/>
+      <location>richmond</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/80055977/n1217910024_30072194_7824_normal.jpg</profile_image_url>
+      <url>http://lauraveit</url>
+      <protected>false</protected>
+      <followers_count>24</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671272</id>
+      <text>Apple Releases Safari 4 Beta: Faster, Prettier, and Easier to Use - Apple today released the first public beta of S... http://bit.ly/pYDfO</text>
+      <source>&lt;a href="http://tweetbots.com"&gt;Tweetbots&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>18589436</id>
+      <name>Tech Force</name>
+      <screen_name>techforce</screen_name>
+      <description>We know tech</description>
+      <location>UK</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/78762844/techforce_normal.jpg</profile_image_url>
+      <url/>
+      <protected>false</protected>
+      <followers_count>151</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:42:00 +0000 2009</created_at>
+      <id>1245671271</id>
+      <text>La nueva pantalla todoterreno de Sony ( http://tinyurl.com/c8gwxo )</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>20104942</id>
+      <name>Lineup</name>
+      <screen_name>lineupblog</screen_name>
+      <description>El update diario de todo geek</description>
+      <location>Blogosfera</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url>http://www.lineupblog.com</url>
+      <protected>false</protected>
+      <followers_count>1</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671270</id>
+      <text>@pranman # O Yeah ;)</text>
+      <source>&lt;a href="http://www.hootsuite.com"&gt;HootSuite&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245264886</in_reply_to_status_id>
+      <in_reply_to_user_id>14637342</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>20865816</id>
+      <name>Priscilla</name>
+      <screen_name>loa_lover</screen_name>
+      <description>Everything &amp;quot;Law of Attraction&amp;quot; has been a passion for many years.  </description>
+      <location>The Universe!</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url>http://loa.infouwant.com</url>
+      <protected>false</protected>
+      <followers_count>3910</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671269</id>
+      <text>Pix of Yankees Playing Pool  http://tinyurl.com/ahuznq</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>17056672</id>
+      <name>newzjunky</name>
+      <screen_name>newzjunky</screen_name>
+      <description>Northern New York's Premiere Web Site for Breaking News, Weather, Politics, Sports, Video, Photos, Audio, and More.</description>
+      <location>Watertown, N.Y.</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url>http://www.newzjunky.com</url>
+      <protected>false</protected>
+      <followers_count>191</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671268</id>
+      <text>@Liz_Hatch That slack jawed Cletus Spuckler look in women is so amazingly haute. #botox</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245632674</in_reply_to_status_id>
+      <in_reply_to_user_id>18019698</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>1201261</id>
+      <name>Richard Masoner</name>
+      <screen_name>cyclelicious</screen_name>
+      <description>I ride bikes. I love Jesus. And I love you.</description>
+      <location>Santa Cruz, California USA</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url>http://www.cyclelicio.us/</url>
+      <protected>false</protected>
+      <followers_count>783</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671267</id>
+      <text>apoti akusa tora mporeis na anebaseis diko sou sxedio</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>16865502</id>
+      <name>Nick Papanotas</name>
+      <screen_name>humaworksSEO</screen_name>
+      <description>a web developer, seo consultant from the shiny Greece</description>
+      <location>Macedonia, Greece</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/63689723/b93c2b8e4e131fa5ba2dbaa34179515f_normal.png</profile_image_url>
+      <url>http://humanworks.gr/</url>
+      <protected>false</protected>
+      <followers_count>358</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:59 +0000 2009</created_at>
+      <id>1245671266</id>
+      <text>Ohh lawd, too much Monday party makes Tuesday sleeeeepy. Trying to pull off the "cubicle-disco-nap" is tricky.</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>20794106</id>
+      <name>Shug Notice</name>
+      <screen_name>Shugnotice</screen_name>
+      <description>Beat s, Be ats, B eats.</description>
+      <location>LA,CA</location>
+      <profile_image_url>http://static.twitter.com/images/default_profile_normal.png</profile_image_url>
+      <url>http://myspace.com/indianvillagemusic</url>
+      <protected>false</protected>
+      <followers_count>7</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:42:00 +0000 2009</created_at>
+      <id>1245671264</id>
+      <text>Has anyone ever seen the fainting goats?
+http://tinyurl.com/2pqo9v</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id/>
+      <in_reply_to_user_id/>
+      <favorited>false</favorited>
+      <user>
+      <id>21353801</id>
+      <name>Austin Z</name>
+      <screen_name>cowsgonemadd3</screen_name>
+      <description>A regular 19 year old guy</description>
+      <location>Ware Shoals SC</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/80478927/19419-bigthumbnail_normal.jpg</profile_image_url>
+      <url/>
+      <protected>false</protected>
+      <followers_count>143</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:58 +0000 2009</created_at>
+      <id>1245671263</id>
+      <text>@metromag I have no clue. It sounds pretty cool, though.</text>
+      <source>web</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245657587</in_reply_to_status_id>
+      <in_reply_to_user_id>18817433</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>14544206</id>
+      <name>Bob Collins</name>
+      <screen_name>bcollinsmn</screen_name>
+      <description>Professional curmudgeon. Writer, Minnesota Public Radio's  News Cut.</description>
+      <location>St. Paul, Minnesota</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/63671969/rick2_normal.jpg</profile_image_url>
+      <url>http://minnesota.publicradio.org/collections/special/columns/news_cut/</url>
+      <protected>false</protected>
+      <followers_count>550</followers_count>
+    </user>
+    </status><status>
+      <created_at>Tue Feb 24 17:41:58 +0000 2009</created_at>
+      <id>1245671262</id>
+      <text>@brownkidd Sweet! I don't have a PS3 and people keep telling me how awesome this game is</text>
+      <source>&lt;a href="http://www.twhirl.org/"&gt;twhirl&lt;/a&gt;</source>
+      <truncated>false</truncated>
+      <in_reply_to_status_id>1245636229</in_reply_to_status_id>
+      <in_reply_to_user_id>12650962</in_reply_to_user_id>
+      <favorited>false</favorited>
+      <user>
+      <id>15443984</id>
+      <name>angiebatgirl</name>
+      <screen_name>angiebatgirl</screen_name>
+      <description>I'm afraid I'm still naive enough to believe the impossible can't be done</description>
+      <location>Gotham City</location>
+      <profile_image_url>http://s3.amazonaws.com/twitter_production/profile_images/75914062/wedtorso_normal.jpg</profile_image_url>
+      <url>http://angiebatgirl.wordpress.com/about/</url>
+      <protected>false</protected>
+      <followers_count>104</followers_count>
+    </user>
+    </status>
+    </statuses>

@@ -1,0 +1,74 @@
+/*
+ * Copyright (c) 2009 Justin Palmer <encytemedia@gmail.com>, All Rights Reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 
+ *   Redistributions of source code must retain the above copyright notice, this
+ *   list of conditions and the following disclaimer.
+ * 
+ *   Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
+ *   and/or other materials provided with the distribution.
+ * 
+ *   Neither the name of the author nor the names of its contributors may be used
+ *   to endorse or promote products derived from this software without specific
+ *   prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+*/
+
+
+## Quick Overview
+It's quiet simple.  NSXMLDocument and NSXMLElement each have a new method: toDictionary.
+  [myXMLDoc toDictionary]; //Returns a dictionary representation of the xml document.
+  // See AIXMLElementSerialize.h for more info
+
+## Using the Framework on OS X
+Add an existing framework and select the AIXMLSerialization.framework. Then include the 
+header:
+    #import <AIXMLSerialization/AIXMLSerialization.h>
+
+
+## Using on the iPhone
+Copy over the files in the 'src' and 'vendor/kissxml' directories to your project.
+In the build settings set "Other linker flags" to -lxml2
+In the build settings set "Header search paths" to /usr/include/libxml2
+
+    #import "AIXMLSerialization.h"
+
+The KissXML library is mapped to it's NSXML counterparts (e.g. NSXMLDocument points to DDXMLDocument) 
+and it's recommended that you use the NSXML prefix.
+
+
+
+## GOALS
+* Work on the iPhone and OS X.  On the iPhone we can replace NSXML* with DDXML* from
+  KissXML (http://code.google.com/p/kissxml/) which aims to be a direct replacement for 
+  NSXML on the iPhone.  
+
+## TODO
+* Type checking and conversion
+* NSDictionary to XML
+
+## Running the benchmark
+WARNING: committees.xml is 257kb and is parsed over 2500 times so it will take a 
+while.
+Simply build the foundation tool (command+B) and run:
+    ./benchmark -f FILE_TO_PARSE -p yes
+    // -f (REQUIRED) - File to parse
+    // -p (OPTIONAL) - Print output
+
+## Running Unit Tests
+1. Build unittests bundle (command+b)
+2. Set otest as active executable
+3. command+alt+y (Run->Debug)
