@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>AIXMLSerializeStatic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>AIXMLSerializeStaticTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>unittests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,6 +32,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6AAC8730194E706700109421</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6AAC8742194E706800109421</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8DD76F960486AA7600D96B5E</key>
 		<dict>
 			<key>primary</key>

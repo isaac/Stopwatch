@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AAC8734194E706800109421 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAC8733194E706800109421 /* Cocoa.framework */; };
+		6AAC873E194E706800109421 /* AIXMLSerializeStatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC873D194E706800109421 /* AIXMLSerializeStatic.m */; };
+		6AAC875A194E70A000109421 /* AIXMLElementSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = D04333F10F5463E80091620E /* AIXMLElementSerialize.m */; };
+		6AAC875B194E70A000109421 /* AIXMLDocumentSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = D04334070F5465050091620E /* AIXMLDocumentSerialize.m */; };
+		6AAC875C194E70A000109421 /* NSDictionary+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = D04338E40F5B65CF0091620E /* NSDictionary+Serialize.m */; };
+		6AAC875D194E70AD00109421 /* AIXMLElementSerialize.h in Headers */ = {isa = PBXBuildFile; fileRef = D04333F00F5463E80091620E /* AIXMLElementSerialize.h */; };
+		6AAC875E194E70AD00109421 /* AIXMLDocumentSerialize.h in Headers */ = {isa = PBXBuildFile; fileRef = D04334060F5465050091620E /* AIXMLDocumentSerialize.h */; };
+		6AAC875F194E70AD00109421 /* NSDictionary+Serialize.h in Headers */ = {isa = PBXBuildFile; fileRef = D04338E30F5B65CF0091620E /* NSDictionary+Serialize.h */; };
+		6AAC8760194E70AD00109421 /* AIXMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C091660F634BB000641101 /* AIXMLSerialization.h */; };
+		6AAC8761194E70DF00109421 /* AIXMLSerializeStatic.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AAC873C194E706800109421 /* AIXMLSerializeStatic.h */; };
 		8DD76F9A0486AA7600D96B5E /* AIXMLSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* AIXMLSerialize.m */; settings = {ATTRIBUTES = (); }; };
 		D03CA52A0F63C6C20014BE16 /* AIXMLSerialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0C091660F634BB000641101 /* AIXMLSerialization.h */; };
 		D04333F20F5463E80091620E /* AIXMLElementSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = D04333F10F5463E80091620E /* AIXMLElementSerialize.m */; };
@@ -31,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6AAC8758194E707A00109421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C091880F634D2E00641101;
+			remoteInfo = AIXMLSerialization;
+		};
 		D04EF0D90F647B39003C6240 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -56,6 +73,18 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* AIXMLSerialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIXMLSerialize.m; sourceTree = "<group>"; };
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		6AAC8731194E706800109421 /* libAIXMLSerializeStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAIXMLSerializeStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AAC8733194E706800109421 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6AAC8736194E706800109421 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6AAC8737194E706800109421 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6AAC8738194E706800109421 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6AAC873B194E706800109421 /* AIXMLSerializeStatic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AIXMLSerializeStatic-Prefix.pch"; sourceTree = "<group>"; };
+		6AAC873C194E706800109421 /* AIXMLSerializeStatic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIXMLSerializeStatic.h; sourceTree = "<group>"; };
+		6AAC873D194E706800109421 /* AIXMLSerializeStatic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIXMLSerializeStatic.m; sourceTree = "<group>"; };
+		6AAC8744194E706800109421 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6AAC874C194E706800109421 /* AIXMLSerializeStaticTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AIXMLSerializeStaticTests-Info.plist"; sourceTree = "<group>"; };
+		6AAC874E194E706800109421 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AAC8750194E706800109421 /* AIXMLSerializeStaticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIXMLSerializeStaticTests.m; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* AIXMLSerialize */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AIXMLSerialize; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03CA4C60F63B9C60014BE16 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		D04333F00F5463E80091620E /* AIXMLElementSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIXMLElementSerialize.h; sourceTree = "<group>"; };
@@ -84,6 +113,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6AAC872E194E706700109421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AAC8734194E706800109421 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +152,9 @@
 				08FB7795FE84155DC02AAC07 /* benchmark */,
 				C6859EA2029092E104C91782 /* Documentation */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				6AAC8739194E706800109421 /* AIXMLSerializeStatic */,
+				6AAC874A194E706800109421 /* AIXMLSerializeStaticTests */,
+				6AAC8732194E706800109421 /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				D04336430F56917A0091620E /* tests */,
 				D0C090BA0F63412600641101 /* vendor */,
@@ -146,8 +186,65 @@
 			children = (
 				8DD76FA10486AA7600D96B5E /* AIXMLSerialize */,
 				D043364B0F5691AE0091620E /* unittests.octest */,
+				6AAC8731194E706800109421 /* libAIXMLSerializeStatic.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6AAC8732194E706800109421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AAC8733194E706800109421 /* Cocoa.framework */,
+				6AAC8744194E706800109421 /* XCTest.framework */,
+				6AAC8735194E706800109421 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AAC8735194E706800109421 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AAC8736194E706800109421 /* Foundation.framework */,
+				6AAC8737194E706800109421 /* CoreData.framework */,
+				6AAC8738194E706800109421 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6AAC8739194E706800109421 /* AIXMLSerializeStatic */ = {
+			isa = PBXGroup;
+			children = (
+				6AAC873C194E706800109421 /* AIXMLSerializeStatic.h */,
+				6AAC873D194E706800109421 /* AIXMLSerializeStatic.m */,
+				6AAC873A194E706800109421 /* Supporting Files */,
+			);
+			path = AIXMLSerializeStatic;
+			sourceTree = "<group>";
+		};
+		6AAC873A194E706800109421 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AAC873B194E706800109421 /* AIXMLSerializeStatic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AAC874A194E706800109421 /* AIXMLSerializeStaticTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AAC8750194E706800109421 /* AIXMLSerializeStaticTests.m */,
+				6AAC874B194E706800109421 /* Supporting Files */,
+			);
+			path = AIXMLSerializeStaticTests;
+			sourceTree = "<group>";
+		};
+		6AAC874B194E706800109421 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AAC874C194E706800109421 /* AIXMLSerializeStaticTests-Info.plist */,
+				6AAC874D194E706800109421 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C6859EA2029092E104C91782 /* Documentation */ = {
@@ -209,6 +306,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		6AAC872F194E706700109421 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AAC8761194E70DF00109421 /* AIXMLSerializeStatic.h in Headers */,
+				6AAC875D194E70AD00109421 /* AIXMLElementSerialize.h in Headers */,
+				6AAC875E194E70AD00109421 /* AIXMLDocumentSerialize.h in Headers */,
+				6AAC875F194E70AD00109421 /* NSDictionary+Serialize.h in Headers */,
+				6AAC8760194E70AD00109421 /* AIXMLSerialization.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0C091840F634D2E00641101 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +332,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6AAC8730194E706700109421 /* AIXMLSerializeStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AAC8752194E706800109421 /* Build configuration list for PBXNativeTarget "AIXMLSerializeStatic" */;
+			buildPhases = (
+				6AAC872D194E706700109421 /* Sources */,
+				6AAC872E194E706700109421 /* Frameworks */,
+				6AAC872F194E706700109421 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AAC8759194E707A00109421 /* PBXTargetDependency */,
+			);
+			name = AIXMLSerializeStatic;
+			productName = AIXMLSerializeStatic;
+			productReference = 6AAC8731194E706800109421 /* libAIXMLSerializeStatic.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		8DD76F960486AA7600D96B5E /* AIXMLSerialize */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "AIXMLSerialize" */;
@@ -299,6 +426,7 @@
 				8DD76F960486AA7600D96B5E /* AIXMLSerialize */,
 				D043364A0F5691AE0091620E /* unittests */,
 				D0C091880F634D2E00641101 /* AIXMLSerialization */,
+				6AAC8730194E706700109421 /* AIXMLSerializeStatic */,
 			);
 		};
 /* End PBXProject section */
@@ -337,6 +465,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6AAC872D194E706700109421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AAC875A194E70A000109421 /* AIXMLElementSerialize.m in Sources */,
+				6AAC875B194E70A000109421 /* AIXMLDocumentSerialize.m in Sources */,
+				6AAC875C194E70A000109421 /* NSDictionary+Serialize.m in Sources */,
+				6AAC873E194E706800109421 /* AIXMLSerializeStatic.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD76F990486AA7600D96B5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,12 +516,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6AAC8759194E707A00109421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0C091880F634D2E00641101 /* AIXMLSerialization */;
+			targetProxy = 6AAC8758194E707A00109421 /* PBXContainerItemProxy */;
+		};
 		D04EF0DA0F647B39003C6240 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0C091880F634D2E00641101 /* AIXMLSerialization */;
 			targetProxy = D04EF0D90F647B39003C6240 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AAC874D194E706800109421 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AAC874E194E706800109421 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB927508733DD40010E9CD /* Debug */ = {
@@ -445,6 +600,76 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6AAC8753194E706800109421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AIXMLSerializeStatic/AIXMLSerializeStatic-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6AAC8754194E706800109421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AIXMLSerializeStatic/AIXMLSerializeStatic-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -584,6 +809,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6AAC8752194E706800109421 /* Build configuration list for PBXNativeTarget "AIXMLSerializeStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AAC8753194E706800109421 /* Debug */,
+				6AAC8754194E706800109421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		D043364F0F5691AF0091620E /* Build configuration list for PBXNativeTarget "unittests" */ = {
 			isa = XCConfigurationList;
