@@ -28,7 +28,6 @@ class AppDelegate
       client[:size] = client["Name"].sizeWithAttributes({ NSFontAttributeName => NSFont.menuFontOfSize(0) }).width
       client.merge :jobs => @jobs.select { |job| job["Client"]["ID"] == client["ID"] }
     end.sort_by { |client| client["Name"] })
-    load
   end
 
   def refresh
