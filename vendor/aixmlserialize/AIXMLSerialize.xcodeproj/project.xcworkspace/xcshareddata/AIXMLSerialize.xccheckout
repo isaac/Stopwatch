@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DFA274DD-5088-4304-8D0A-C9428D32A577</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AIXMLSerialize</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE1407CC-15FE-417E-9AE8-3D71EB0B8166</key>
+		<string>ssh://github.com/isaac/Stopwatch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>vendor/aixmlserialize/AIXMLSerialize.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE1407CC-15FE-417E-9AE8-3D71EB0B8166</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/isaac/Stopwatch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE1407CC-15FE-417E-9AE8-3D71EB0B8166</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE1407CC-15FE-417E-9AE8-3D71EB0B8166</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Stopwatch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
